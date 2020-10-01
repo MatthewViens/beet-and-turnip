@@ -1,0 +1,13 @@
+@import 'variables';
+
+body {
+  background: #ffffff;
+  font-family: $primary-font-stack;
+  color: $font-color;
+  line-height: 2;
+}
+
+h1, h2, h3 {
+  color: $heading-color;
+  font-family: $secondary-font-stack;
+}

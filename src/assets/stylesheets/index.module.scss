@@ -1,0 +1,137 @@
+@import 'variables';
+
+.header-section__content-container,
+.about-section__content-container,
+.menu-section__content-container {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.header-section {
+  padding: 2rem 0;
+}
+
+.header-section__content-container--right {
+}
+
+.header-section__content-container--left {
+  h1 {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+  }
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+    width: 50%;
+  }
+}
+
+.header-section__button--menu, .header-section__button--book {
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 2px solid $accent-color;
+  padding: 0.4rem 2.2rem;
+}
+
+.header-section__button--menu {
+  color: $heading-color;
+  background-color: $secondary-color;
+}
+
+.header-section__button--book {
+  color: #ffffff;
+  background-color: $heading-color;
+  margin-right: 0.7rem;
+}
+
+.about-section {
+  background-color: $background-color;
+  padding: 2rem 0;
+}
+
+.about-section__content-container {
+  
+}
+
+.about-section__content-container--right,
+.menu-section__content-container--right {
+  background-color: #ffffff;
+  padding: 5%;
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    margin: 2rem 0;
+    line-height: 1.5;
+  }
+}
+
+.menu-section {
+  background-color: $secondary-background-color;
+  padding: 2rem 0;
+}
+
+.menu-section__content-container--left {
+  margin-bottom: 1rem;
+}
+
+.menu-section__content-container {
+
+}
+
+.menu-section__content-container--right {
+
+}
+
+.reviews-section {
+  padding: 2rem 0;
+  position: relative;
+}
+
+.reviews-section__content-container {
+  width: 80%;
+}
+
+.reviews-section__content-container--top {
+  height: 304px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $secondary-accent-color;
+  width: 70%;
+  padding: 1rem 4rem;
+  left: 0;
+  right: 0;
+  top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+
+  p {
+    color: #ffffff;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    color: $accent-color;
+    margin-top: 2rem;
+    align-self: flex-start;
+    font-family: $primary-font-stack;
+    font-weight: 600;
+  }
+
+  span {
+    color: $secondary-brown;
+  }
+}
+
