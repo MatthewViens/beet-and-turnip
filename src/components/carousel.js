@@ -26,7 +26,7 @@ const reviews = [
   }
 ]
 
-const Carousel = () => {
+const Carousel = (props) => {
   const [index, setIndex] = useState(0)
 
   const length = reviews.length - 1
@@ -38,13 +38,29 @@ const Carousel = () => {
   }
   const review = reviews[index]
 
+  const containerStyles = {
+    display: "flex",
+    justifyContent: "space-around",
+    alignItems: "center",
+  }
+
+  const contentStyles = {
+    width: "70%",
+    display: "flex",
+    flexDirection: "column"
+  }
+
+
   return (
     <div>
-      <div>
-        <span onClick={() => handlePrevious()}> prev </span>
-        <p>{review.review}</p>
-        <h3>{review.author}</h3>
-        <span onClick={() => handleNext()}> next </span> 
+      <h2>{props.title}</h2>
+      <div style={containerStyles}>
+        <button onClick={() => handlePrevious()}> prev </button>
+        <div style={contentStyles}>
+          <p>{review.review}</p>
+          <h3>- {review.author}</h3>
+        </div>
+        <button onClick={() => handleNext()}> next </button> 
       </div>
     </div>
   )

@@ -9,7 +9,7 @@
 }
 
 .header-section {
-  padding: 2rem 0;
+  padding-bottom: 3rem;
 }
 
 .header-section__content-container--right {
@@ -24,7 +24,6 @@
   p {
     line-height: 1.5;
     margin-bottom: 2.5rem;
-    width: 50%;
   }
 }
 
@@ -52,7 +51,15 @@
 }
 
 .about-section__content-container {
-  
+}
+
+.about-section__content-container--left {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  img {
+    padding-bottom: 0.4rem;
+  }
 }
 
 .about-section__content-container--right,
@@ -89,49 +96,46 @@
 
 .reviews-section {
   padding: 2rem 0;
-  position: relative;
 }
 
 .reviews-section__content-container {
-  width: 80%;
+  width: 100%;
+  position: relative;
+}
+
+.reviews-section__content-container--bottom {
+  display: none;
 }
 
 .reviews-section__content-container--top {
-  height: 304px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // position: absolute;
   background-color: $secondary-accent-color;
-  width: 70%;
-  padding: 1rem 4rem;
-  left: 0;
-  right: 0;
-  top: 15%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  // top: -5%;
+  margin: auto;
+  max-width: 700px;
+  padding: 1rem 0 2rem 0;
+
 
   p {
     color: #ffffff;
     line-height: 1.5;
+    font-size: 1rem;
   }
 
   h2 {
     font-size: 1.75rem;
     color: #ffffff;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
   }
 
   h3 {
     color: $accent-color;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     align-self: flex-start;
     font-family: $primary-font-stack;
     font-weight: 600;
-  }
-
-  span {
-    color: $secondary-brown;
   }
 }
 

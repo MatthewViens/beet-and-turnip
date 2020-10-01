@@ -76,11 +76,12 @@ const indexPage = (props) => {
       </section>
       <section className={styles.reviewsSection}>
         <div className={styles.reviewsSection__contentContainer}>
-          <Image filename="review.jpg" />
-        </div>
-        <div className={styles.reviewsSection__contentContainerTop}>
-          <h2>Guest Reviews</h2>
-          <Carousel />
+          <div className={styles.reviewsSection__contentContainerBottom}>
+            <Image filename="review.jpg" />
+          </div>
+          <div className={styles.reviewsSection__contentContainerTop}>
+            <Carousel title="Guest Reviews" />
+          </div>
         </div>
       </section>
     </Layout>
