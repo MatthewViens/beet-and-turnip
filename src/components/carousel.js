@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons'
+
 const reviews = [
   {
     review: `If you've been in Alkinoos Taverna, you've seen - and tasted - what keeps customers
@@ -41,7 +44,7 @@ const Carousel = (props) => {
   const containerStyles = {
     display: "flex",
     justifyContent: "space-around",
-    alignItems: "center",
+    alignItems: "stretch",
   }
 
   const contentStyles = {
@@ -50,17 +53,33 @@ const Carousel = (props) => {
     flexDirection: "column"
   }
 
+  const arrowStyles = {
+    width: "15%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: "40px"
+  }
+
+  // const chevron = {
+  //   height: "100%"
+  // }
+
 
   return (
     <div>
       <h2>{props.title}</h2>
       <div style={containerStyles}>
-        <button onClick={() => handlePrevious()}> prev </button>
+        <div style={arrowStyles} onClick={() => handlePrevious()}>
+          <FontAwesomeIcon icon={faChevronLeft} size="3x" />
+        </div>
         <div style={contentStyles}>
           <p>{review.review}</p>
           <h3>- {review.author}</h3>
         </div>
-        <button onClick={() => handleNext()}> next </button> 
+        <div style={arrowStyles} onClick={() => handleNext()}>
+          <FontAwesomeIcon icon={faChevronRight} size="3x"  />
+        </div> 
       </div>
     </div>
   )

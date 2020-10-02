@@ -10,6 +10,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-fontawesome-css',
     {
       resolve: 'gatsby-plugin-prefetch-google-fonts',
       options: {
