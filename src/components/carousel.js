@@ -58,7 +58,8 @@ const Carousel = (props) => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: "40px"
+    marginBottom: "40px",
+    userSelect: "none"
   }
 
   // const chevron = {
